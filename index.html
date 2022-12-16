@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Tik Tok</title>
+</head>
+<body>
+    <h1><span class="tik" >Tik</span> <span class="tok">Tok</span> <span class="clone">Clone</span> </h1>
+    <p>Am coding my first <b>website</b> </p>
+
+    <input type="text">
+    <h2>Type</h2>
+    <style>
+       .tik{
+        color: green;
+       }
+       .tok{
+        color: blue;
+       }
+       .clone{
+        color: purple;
+       }
+    </style>
+    <script>
+        const input = document.querySelector("input")
+        const h1 = document.querySelector('h2')
+        input.addEventListener("input" , (e)=>{
+           h1.textContent = input.value
+        })
+    </script>
+</body>
+</html>
